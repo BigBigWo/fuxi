@@ -1,0 +1,350 @@
+* {
+    margin: 0px;
+    padding:0px;
+  }
+
+  .all {
+    margin: 0px;
+    padding: 0px;
+    width:100%;
+    height:auto;
+    background: #081D3C;
+  }
+.top {
+    background-size:100%;
+    width:100%;
+    height:50px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    display: flex;
+    justify-content: space-between;
+    background: #081D3C;
+  }
+  .Left {
+    margin-top:5px;
+    height:100%;
+    width:30%;
+    line-height:30px;
+  }
+
+  .Lf {
+    float:left;
+    margin-top:4px;
+    height:25px;
+    width:20%;
+    text-align:center;
+  }
+  #Lf-img{
+    width:10px;
+    height:20px;
+    margin-top:8px;
+  }
+  .Lf span{
+    color:#FFFFFF;
+    font-size:17px;
+  }
+  #Lf-2:before{
+    content: "|";
+    float: left;
+    color:#FFFFFF;
+
+  }
+  #Lf-3:before{
+    content: "|";
+    float: left;
+    color:#FFFFFF;
+
+  }
+  #Lf-4:before{
+    content: "|";
+    float: left;
+    color:#FFFFFF;
+  }
+ a{
+   text-decoration:none;
+ }
+
+ .Lf span:hover{
+   color:#99ccff;
+ }
+
+  .ct{
+    width:600px;
+    height:40px;
+    color: #FFFFFF;
+    font-size: 28px;
+    text-align:center;
+
+  }
+  .ct span{
+    color:#FFFFFF;
+    font-size: 28px;
+
+  }
+  .Content {
+    background:url(./img/bg_btk3.png) no-repeat center center ;
+    background-size: 100% 80%;
+    height:50px;
+    width:700PX;
+    display:flex;
+    justify-content:center;
+  }
+  .right{
+    margin-top:5px;
+    height:100%;
+    width:30%;
+    line-height:30px;
+  }
+  .rt{
+    margin-top:4px;
+    height:25px;
+    width:20%;
+    text-align:center; 
+    float:right;
+  }
+   
+#rt-1 span:hover{
+    color:#99ccff;
+}
+#rt-2 span:hover{
+    color:#99ccff;
+}
+  
+  .span{
+    margin-top:4px;
+    height:25px;
+    width:100px;
+
+  }
+  #rt-4{
+    margin-top:0px;
+    width:90px;
+    line-height: 19px;;
+
+}
+#rt-4 span{
+    margin-top:0px;
+    font-size:12px;
+    color:#3690EE;
+}
+#rt-1,#rt-2 span{ 
+    color:white;
+
+
+}
+#rt-1 span{
+    color: white;
+}
+#rt-3{
+    line-height:34px;
+    width:88px;
+}
+#rt-3 span{
+    color:#3690EE;
+    font-size: 20px;
+    line-height:5px;
+}
+#rt-2:before {
+    content: "|";
+    float: left;
+    color: #FFFFFF;
+  
+  }
+  #rt-5{
+    width: 10%;
+    height:30px;
+  }
+  /* 中部内容 */
+  .zhonjian{
+    width:100%;
+    height:auto;
+    margin-top:40px;
+    display: flex;
+    justify-content: space-between;
+}
+/* 左侧大盒子 */
+  .zuoche{
+    width:26%;
+    height:970px;
+  }
+  /* 中部大盒子 */
+  .zhonbu{
+    width:46%;
+    height:970px;
+  }
+  /* 右侧大盒子 */
+  .youche{
+    width:26%;
+    height:970px;
+    /*左侧3个盒子  */
+  }
+  .left{
+    width:98%;
+    height:288px;
+    margin-bottom:39px;
+    margin-left: 1%;
+    background: rgba(255,255,255,0.05);
+    opacity: 1;
+    border: 1px solid #0A3E77;
+
+  }
+  /* 中部两个盒子 */
+  .zhonbu-1{
+    background: rgba(255,255,255,0.05);
+    opacity: 1;
+    border: 1px solid #0A3E77;
+    width: 100%;
+    height: 678px;
+  }
+  .zhonbu-2{
+    margin-top:40px;
+    border: 1px solid blue;
+    width: 100%;
+    height: 224px;
+    opacity: 1;
+    border: 1px solid #0A3E77;
+    background: rgba(255,255,255,0.05);
+    opacity: 1;
+    border: 1px solid #0A3E77;
+  }
+  /* 小盒子顶部标题 */
+  .left-top{
+    margin-top: -20px;
+    width:40%;
+    height: 40px;
+    text-align: center;
+    margin-left: 30%;
+    line-height: 40px;
+    border: 1px solid #2E98CF;
+    color: white;
+    
+  }
+  /* 中部展示区域 */
+  .zb-image{
+    border: 1px solid #0A3E77;
+    width: 96%;
+    height:92%;
+    margin-left:2%;
+    margin-top:18px;
+  }
+  /* 妇女之家盒子 */
+  .tuwen-image{
+    width: 96%;
+    height: 64%;
+    border: 1px solid #0A3E77;
+    margin-top:19px;
+  }
+  .text{
+    width: 96%;
+    height:16%;
+    border: 1px solid #0A3E77;
+  }
+/* 求有所应图文盒子 */
+.qingqiu-1,.qingqiu-2,.qingqiu-1,.qingqiu-2{
+  background: rgba(255,255,255,0.05);
+  margin-left:4%;
+  width:92%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.xiangc-1,.gongaoc-1{
+  margin-top:18px;
+}
+.xiangc-2,.gongaoc-2{
+  margin-top:10px;
+
+}
+.xiangc-1-1,.xiangc-2-1,.gongaoc-1-1,.gongaoc-2-1{
+  width:35%;
+  height:80px;
+  margin-left:3%;
+}
+.xiangc-1-2,.xiangc-2-2,.gongaoc-1-2,.gongaoc-2-2{
+  width: 60%;
+  height:80px;
+  margin-right:3%;
+}
+/* 求有所应信息综述图文 */
+.qingqiu{
+  width: 100%;
+  height: 84%;
+  margin-top:2%;  
+  display: flex;
+  justify-content: space-between;
+  opacity: 1;
+  border-top: 1px solid #0A3E77;
+ 
+}
+.qingqiu-image{
+  width: 30%;
+  height:96%;
+  margin-left: 2%;
+  border-right:1px solid #0A3E77;
+}
+.qingqiu-text{
+  width: 64%;
+  height:96%;
+  margin-right: 2%;
+}
+/* 爱心工作站图片区域 */
+.aixing-image{
+     width: 42%;
+     height: 82%;
+     margin-top:18px;
+     border: 1px solid #0A3E77;
+     margin-left: 29%;
+}
+
+/* 资源回收与寻人寻物的盒子 */
+.xunzhao{
+    margin-top: 18px;
+    margin-left: 7%;
+    width:86%;
+    height:56%;
+    display: flex;
+    justify-content: space-between;
+  }
+  /* 图文 */
+  .xunzhao-image{
+    border: 1px solid #0A3E77;
+    width: 45%;
+    height:100%;
+   
+    
+  }
+
+  .xunzhao-wenben{
+    width:86%;
+    margin-left: 7%;
+    height:10%;
+    display:flex;
+    justify-content: space-between;
+  }
+  .wenben{
+    border: 1px solid #0A3E77;
+    width:30%;
+    height:100%;
+    
+    
+  }
+  #wenben-1,#wenben-3{
+    margin-left:8%;
+    text-align: center;
+    color: white;
+  }
+  #wenben-2,#wenben-4{
+    margin-right: 8%;
+    text-align: center;;
+    color: white;
+  }
+  /* 查看框 */
+.chakan{
+    margin-left: 42%;
+    width: 16%;
+    height: 17px;
+    font-size: 12px;
+    color: #00FCF9;
+    text-align: center;
+    margin-top:10px;
+  }
