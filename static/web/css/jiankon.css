@@ -1,0 +1,437 @@
+* {
+  margin: 0px;
+  padding:0px;
+}
+
+.all {
+  margin: 0px;
+  padding: 0px;
+  width:100%;
+  height:auto;
+  background: #081D3C;
+}
+.top {
+  background-size:100%;
+  width:100%;
+  height:50px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  display: flex;
+  justify-content: space-between;
+  background: #081D3C;
+}
+.Left {
+  margin-top:5px;
+  height:100%;
+  width:30%;
+  line-height:30px;
+}
+
+.Lf {
+  float:left;
+  margin-top:4px;
+  height:25px;
+  width:20%;
+  text-align:center;
+}
+#Lf-img{
+  width:10px;
+  height:20px;
+  margin-top:8px;
+}
+.Lf span{
+  color:#FFFFFF;
+  font-size:17px;
+}
+#Lf-2:before{
+  content: "|";
+  float: left;
+  color:#FFFFFF;
+
+}
+#Lf-3:before{
+  content: "|";
+  float: left;
+  color:#FFFFFF;
+
+}
+#Lf-4:before{
+  content: "|";
+  float: left;
+  color:#FFFFFF;
+}
+a{
+ text-decoration:none;
+}
+
+.Lf span:hover{
+ color:#99ccff;
+}
+
+.ct{
+  width:600px;
+  height:40px;
+  color: #FFFFFF;
+  font-size: 28px;
+  text-align:center;
+
+}
+.ct span{
+  color:#FFFFFF;
+  font-size: 28px;
+
+}
+.Content {
+  background:url(./img/bg_btk3.png) no-repeat center center ;
+  background-size: 100% 80%;
+  height:50px;
+  width:700PX;
+  display:flex;
+  justify-content:center;
+}
+.right{
+  margin-top:5px;
+  height:100%;
+  width:30%;
+  line-height:30px;
+}
+.rt{
+  margin-top:4px;
+  height:25px;
+  width:20%;
+  text-align:center; 
+  float:right;
+}
+ 
+#rt-1 span:hover{
+  color:#99ccff;
+}
+#rt-2 span:hover{
+  color:#99ccff;
+}
+
+.span{
+  margin-top:4px;
+  height:25px;
+  width:100px;
+
+}
+#rt-4{
+  margin-top:0px;
+  width:90px;
+  line-height: 19px;;
+
+}
+#rt-4 span{
+  margin-top:0px;
+  font-size:12px;
+  color:#3690EE;
+}
+#rt-1,#rt-2 span{ 
+  color:white;
+
+
+}
+#rt-1 span{
+  color: white;
+}
+#rt-3{
+  line-height:34px;
+  width:88px;
+}
+#rt-3 span{
+  color:#3690EE;
+  font-size: 20px;
+  line-height:5px;
+}
+#rt-2:before {
+  content: "|";
+  float: left;
+  color: #FFFFFF;
+
+}
+#rt-5{
+  width: 10%;
+  height:30px;
+}
+
+  /* 中部大大盒子 */
+  .contaner{
+    margin-top: 40px;
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: space-between;
+    background:url(img/bg_btk3.png) no-repeat center center ;
+    background-size: 100% 80%;
+    
+  }
+
+  /* 左侧盒子 */
+  .zuoche{
+    width: 14%;
+    height: 942px;
+    margin-left: 30px;
+    color: white;
+    border: 1px solid #0A3E77;
+    background: rgba(255,255,255,0.05);
+  }
+  .zc-top{
+    margin-top:-20px;
+    width: 70%;
+    height: 40px;
+    margin-left: 15%;
+    text-align:center;
+    background:url(img/bg_btk1.png) no-repeat;
+    background-size: 100% 80%;
+    line-height: 40px;
+    border: 1px solid #2E98CF;
+    opacity: 1;
+  }
+  /* 刷新 */
+  .shuaxing{
+    height: 33px;;
+    width: 50%;
+    margin-top:18px;
+    margin-left:25%;
+    text-align:center;
+    background: rgba(255,255,255,0.05);
+    box-shadow: inset 0px 0px 20px 1px #7AEEFB;
+    text-align: center;
+    line-height: 33px;
+  }
+  /* 菜单 */
+  .caidan{
+    width:100%;
+    height:48px;
+    background: rgba(255,255,255,0.05);
+   
+  
+  }
+
+/* 下拉按钮样式 */
+.caidan-btn{
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  height: 48px;
+  background: rgba(255,255,255,0);
+  }
+
+  /* 容器 <div> - 需要定位下拉内容 */
+  .caidan{
+    width:100%;
+    position: relative;
+    display: inline-block;
+  }
+  /* 下拉内容 (默认隐藏) */
+  .caidan-content{
+    width:100%;
+    height:48px;
+    display: none;
+    position: absolute;
+
+    
+
+    
+  }
+  .caidan-content ul{
+    list-style-type: none;
+    width:100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size: 14px;
+    font-family: PingFang SC-Regular, PingFang SC;
+   
+
+  }
+  
+ 
+  /* 下拉菜单的链接 */
+  .caidan-content a{
+    
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: white;
+
+  }
+  /* 鼠标移上去后修改下拉菜单链接颜色 */
+  .caidan-content a:hover {
+    background: rgba(255,255,255,0.05);
+  }
+/* 在鼠标移上去后显示下拉菜单 */
+  .caidan:hover .caidan-content{
+    display: block;
+
+  }
+  /* 当下拉内容显示后修改下拉按钮的背景颜色 */
+  .caidan-content  .caidan{
+    background-color:#3e8e41;
+  }
+   
+ 
+ 
+  /* 中间大盒子 */
+  .zhonjian{
+    width: 52%;
+    height: 942px;
+    background: rgba(255,255,255,0.05);
+    color:white;
+    border: 1px solid #0A3E77;
+  }
+  .zhonjian-top{
+    height: 40px;
+    width: 22%;
+    border: 1px solid #2E98CF;
+    margin-top:-20px;
+    margin-left:39%;
+    text-align: center;
+    line-height: 40px;
+
+  }
+  /* 中间盒中盒 */
+
+  .zj-1{
+    margin-top:38px;
+    width: 100%;
+    height: 578px;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255,255,255,0.05);
+    
+  }
+  .zj-h1{
+    width: 60%;
+    height: 578px;
+    border: 1px solid #36D8D8;
+    opacity: 1;
+    background: rgba(255,255,255,0.05);
+    opacity: 1;
+  }
+  /*盒子1中的文本 */
+  .zj-h1 p{
+    font-size: 14px;
+    margin-top:20px;
+    margin-left:15px;
+
+  }
+
+  .zj-h2-1 p{
+    font-size: 14px;
+    margin-left: 15px;
+  }
+  .zj-h2-2 p{
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 14px;
+  }
+  .zj-2 p{
+    font-size:14px;
+    margin-top:20px;
+    margin-left:20px;
+  }
+  /* 摄像头事件框 */
+.sxt{
+  height: 420px;
+  width: 96%;
+  margin-top:50px;
+  margin-left:2%;
+  background: #070C1A;
+border-radius: 0px 0px 0px 0px;
+opacity: 1;
+}
+.zj-h2-sxt1,.zj-h2-sxt2{
+  width: 96%;
+  height: 206px;
+  background: #070C1A;
+  border-radius: 0px 0px 0px 0px;
+  opacity: 1;
+  margin-top:20px;
+  margin-left:2%;
+}
+.zj-2-h-sxt{
+  background: #070C1A;
+  border-radius: 0px 0px 0px 0px;
+  opacity: 1;
+  width:96%;
+  height:206px;
+  margin-top:20px;
+  margin-left:2%;
+}
+  /* 盒1中盒2的盒子 */
+  .zj-h2-1,.zj-h2-2 {
+    width:96%;
+    height:281px;
+    margin-left:2%;
+    background: rgba(255,255,255,0.05);
+    border-radius: 0px 0px 0px 0px;
+    opacity: 1;
+  }
+
+
+
+  .zj-h2{
+    width: 40%;
+    height: 578px;
+  }
+
+  .zj-2{
+    margin-top:15px;
+    width: 100%;
+    height: 281px;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255,255,255,0.05);
+  }
+  /* 盒子2中的盒子 */
+  .zj-2-h{
+    width: 32%;
+    height: 281px;
+    margin-left:1%;
+    background: rgba(255,255,255,0.05);
+    border-radius: 0px 0px 0px 0px;
+    opacity: 1;
+  }
+  #zj-2-3{
+    margin-right: 1%;
+  }
+  /* 右侧大盒子 */
+ 
+ .youche{
+  margin-right: 30px;
+  width:24%;
+  height: 942px;
+  color:white;
+ }   
+ /* 右侧小盒子 */
+ .youche-h1,.youche-h2,.youche-h3{
+  background: rgba(255,255,255,0.05);
+  
+  opacity: 1;
+  border: 1px solid #0A3E77;
+  height: 287px;
+  width:100%;
+ }
+ #youche-2,#youche-3{
+  margin-top:38px;
+ }
+ /* 右侧标题盒 */
+ .youche-top{
+  border: 1px solid #2E98CF;
+  height: 40px;
+  width: 36%;
+  text-align: center;
+  line-height: 40px;
+  margin-left:32%;
+  margin-top: -20PX;
+ }
+/* 右侧事件 */
+.youche-image{
+  height: 230px;
+  border: 1px solid #0A3E77;
+  width: 96%;
+  margin-left:2%;
+  margin-top:18px;
+}
+.dh a{
+  color: white;
+}
