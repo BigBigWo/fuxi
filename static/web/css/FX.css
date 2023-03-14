@@ -15,56 +15,44 @@
   background-size:100%;
   width:100%;
   height:70px;
-  border-bottom: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid transparent;
   display: flex;
   justify-content: space-between;
   background: #0A2346;
 }
 .Left {
-  margin-top:5px;
   height:100%;
   width:30%;
-  line-height:30px;
+  line-height:70px;
 }
 
 .Lf {
   float:left;
-  margin-top:4px;
   height:25px;
-  width:20%;
+  margin-right: 18.5px;
   text-align:center;
 }
-#Lf-img{
+.Lf-img{
   width:10px;
   height:20px;
-  margin-top:8px;
+  margin: 3px 18px 0px 10px;
 }
-.Lf span{
+.Lf a{
   color:#FFFFFF;
 }
-#Lf-2:before{
+.lf-before:before{
   content: "|";
   float: left;
   color:#FFFFFF;
+  margin-right: 18.5px;
 
-}
-#Lf-3:before{
-  content: "|";
-  float: left;
-  color:#FFFFFF;
-
-}
-#Lf-4:before{
-  content: "|";
-  float: left;
-  color:#FFFFFF;
 }
 a{
  text-decoration:none;
 }
 
-.Lf span:hover{
- color:#99ccff;
+.Lf a:hover{
+ color:#3690EE;
 }
 
 .ct{
@@ -82,7 +70,6 @@ a{
 
 }
 .Content {
-  background:url(./img/bg_btk3.png) no-repeat center center ;
   background-size: 100% 80%;
   height:50px;
   width:700PX;
@@ -90,24 +77,23 @@ a{
   justify-content:center;
 }
 .right{
-  margin-top:5px;
   height:100%;
   width:30%;
-  line-height:30px;
+  line-height:70px;
 }
 .rt{
-  margin-top:4px;
-  height:25px;
-  width:20%;
   text-align:center; 
   float:right;
 }
- 
-#rt-1 span:hover{
-  color:#99ccff;
+.rt-text{
+  margin-right: 18.5px;
 }
-#rt-2 span:hover{
-  color:#99ccff;
+.rt a{ 
+  color:white;
+}
+ 
+.rt-text a:hover{
+  color:#3690EE;
 }
 
 .span{
@@ -116,51 +102,45 @@ a{
   width:100px;
 
 }
-#rt-4{
-  margin-top:0px;
-  width:90px;
-  line-height: 19px;;
-
+.time-day{
+  margin-top: 21px;
+  margin-left: 15px;
+  width:78px;
+  line-height: 14px;
+  display: block;
+  text-align: left;
 }
-#rt-4 span{
+.time-day span{
   margin-top:0px;
   font-size: 0.75px;
   color:#3690EE;
+  display: block;
 }
-#rt-1,#rt-2 span{ 
-  color:white;
 
-
-}
-#rt-1 span{
-  color: white;
-}
-#rt-3{
-  line-height:34px;
+.time-text{
+  line-height:70px;
   width:88px;
+  display: inline-table;
 }
-#rt-3 span{
+.time-text span{
   color:#3690EE;
-  font-size: 20px;
-  line-height:5px;
 }
-#rt-2:before {
-  content: "|";
-  float: left;
-  color: #FFFFFF;
+.full-screen-btn{
+  width: 50px;
+  display: inline-table;
+  margin-top: 5px;
+}
 
+.full-screen-btn img{
+  width: 28px;
 }
-#rt-5{
-  width: 10%;
-  height:30px;
-}
+
   /* 中部区域 */
 
 
   .cL {
     width:100%;
-    border: 1px solid width;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid #0A3E77;
     background: rgba(255,255,255,0.05);
     margin-bottom:40px;
     height: 287px;
@@ -172,30 +152,29 @@ a{
     display: flex;
     justify-content: space-between;
     width:100%;
-    margin-top: 20px;
   }
   .cantaner-Left {
     height:auto;
-    width:24%;
+    width:28%;
     margin-top:20px;
-
-
+    padding: 0px 20px 0px 30px
   }
   .cantaner-1{
-    width:40%;
+    width:44%;
     height:auto;
     margin-top:20px;
   }
   .contain-right{
     margin-top:20px;
     height:auto;
-    width:26%;
+    width:28%;
+    padding: 0px 30px 0px 20px;
   }
   .c-zhongj{
     width:100%;
     height: 678px;
     margin-top:20px;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid #0A3E77;
     background: rgba(255,255,255,0.05);
   }
   .c-zhongj2{
@@ -203,13 +182,12 @@ a{
     width:100%;
     height: 224px;
     margin-top:40px;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid #0A3E77;
     background: rgba(255,255,255,0.05);
  }
   .cR{
     width:100%;
-    border: 1px solid width;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid #0A3E77;
     background: rgba(255,255,255,0.05);
     height: 287px;
     margin-top:20px;
@@ -221,18 +199,6 @@ a{
     margin-top:40px;
 
   }
-  .bg-1{
-    color:white;
-    background:url(img/bg_btk1.png) no-repeat;
-    width: 40%;
-    height: 40px;
-    text-align:center;
-    margin-top:-20px;
-    margin-left:26.5%;
-    line-height:35px;
-    opacity: 1;
-   border: 1px solid #2E98CF;
-  }
   .img-2{
     width:10%;
     margin-left:20%;
@@ -242,20 +208,38 @@ a{
     width:100%;
     margin-top:10px;
   }
-  .bg-1-1{
+  .box-top-bar{
     color:white;
-    background:url(img/bg_btk1.png) no-repeat;
+    background:url(../../public/images/bg_btk1.svg) no-repeat;
+    background-size: 100% 100%;
     width: 40%;
     height: 40px;
     margin-top:-20px;
     margin-left:26.5%;
-    line-height:35px;
-    opacity: 1;
-   border: 1px solid #2E98CF;
-   display: flex;
-   flex-direction: row;
-   justify-self: start;
-}
+    line-height:40px;
+    text-align: center;
+    font-size: 1.125rem;
+  }
+
+  .box-top-bar-center{
+    color:white;
+    background:url(../../public/images/bg_btk2.svg) no-repeat;
+    background-size: 100% 100%;
+    width: 40%;
+    height: 40px;
+    margin-top:-20px;
+    margin-left:26.5%;
+    line-height:40px;
+    text-align: center;
+    font-size: 1.125rem;
+  }
+  .box-top-bar img{
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 20px;
+    margin-bottom: 2px;
+  }
+
 .wb{
 
   width: 50%;
@@ -266,8 +250,6 @@ a{
 .wb span{
   color: white;
 }
-  
-
 
   .img-1{
     width: 20px;
@@ -277,39 +259,36 @@ a{
     border: 1px solid rgba(255,255,255,0.1);
 
   }
-  .cr-bg{
-    color:white;
-    background:url(img/bg_btk1.png) no-repeat;
-    width: 40%;
-    height: 40px;
-    text-align:center;
-    margin-top:-20px;
-    margin-left:30%;
-    line-height:35px;
-    opacity: 1;
-    border: 1px solid #2E98CF;
-  }
-  .dj-1,.dj-2{
+  .dj{
     height: 100px;
     width:92%;
     margin-left:4%;
     display:flex;
     justify-content: space-between;
-
-
+    margin-top:20px;
   }
-  .dj-1-1,.dj-1-2,.dj-1-3,.dj-2-1,.dj-2-2,.dj-2-3{
+  .dj-box{
     width: 30%;
     height: 100px;
-    border: 1px solid rgba(255,255,255,0.1);
     background: rgba(255,255,255,0.05);
+    text-align: center;
   }
-.dj-2{
-  margin-top:20px;
-}
-.dj-1{
-  margin-top:20px;
-}
+  .dj-box>span {
+    display: block;
+    color: #FFFFFF;
+    font-size: 0.75rem;
+  }
+  .dj-box>span:first-child {
+    margin-top: 28px;
+  }
+  .dj-box i {
+    font-style: normal;
+    font-weight: bold;
+    color: #36D8D8;
+    font-size: 1.25rem;
+    margin-right: 2px;
+  }
+
   .dztg-1,.dztg-2{
     background: rgba(255,255,255,0.05);
     margin-left:4%;
