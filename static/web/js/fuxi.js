@@ -9,6 +9,12 @@ $(document).ready(function(){
             type: 'value',
             boundaryGap: [0, 0.01],
             axisTick: false,
+            axisLabel: {
+                show: true, //显示坐标轴上的文字
+                fontStyle:"PingFang SC-Regular, PingFang SC",
+                fontSize: 28,
+                color: '#B9BFC8'
+            },
             splitLine:{
                 show:true,
                 lineStyle:{ 
@@ -16,11 +22,9 @@ $(document).ready(function(){
                     shadowColor: "#B9BFC8",  // 透明度颜色
                     opacity: 0.1, //透明度
                     width: 1, 
-                    type: 'solid' 
+                    type: 'solid',
+                
                 }
-            },
-            textStyle:{
-                fontSize:'12'
             },
             offset:2,
             axisLine:{
@@ -37,7 +41,10 @@ $(document).ready(function(){
             axisTick: false,
             offset:2,
             axisLabel: {
-                show: true, //显示坐标轴上的文字\
+                show: true, //显示坐标轴上的文字
+                fontStyle:"PingFang SC-Regular, PingFang SC",
+                fontSize: 24,
+                color: '#B9BFC8'
             },
             splitLine:{
                 show:false,
@@ -63,7 +70,11 @@ $(document).ready(function(){
                     normal: {
                         label: {
                         show: true,
-                          position: 'right', //数值在上方显示
+                        position: 'right',  //数值在上方显示
+                        textStyle:{
+                            color:'auto'
+                        }
+                           
                         }
                     }
                 }
@@ -73,7 +84,7 @@ $(document).ready(function(){
         grid:{
             show:false,
             top:'25%',
-            right:'26%',
+            right:'5%',
             bottom:'10%',
             left:'20%'
         },
@@ -215,14 +226,16 @@ $(document).ready(function(){
             right: '25%',
             top: 'middle',
             textStyle: {
-                color: '#fff'
-            }
+                color: '#fff',
+                lineHeight: 28,
+            },
+
         },
         color: ['#36D8D8' , '#975FE5', '#FF2F20', '#7BDF82'],
         series: [{	
             type: 'pie',
             right: '55%',
-            radius: ['60%', '85%'],
+            radius: ['70%', '95%'],
             label: {
                 show: true,
                 position: 'center',
@@ -260,6 +273,19 @@ $(document).ready(function(){
     // window.addEventListener("resize",function(){
     //     myChartSh1.resize();
     // });
-    
+
+    var mySwiper = new Swiper ('.swiper', {
+        // loop: true, // 循环模式选项
+        // 如果需要分页器
+        // pagination: {
+        //     el: '.swiper-pagination',
+        // },
+        
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    })     
 
 });

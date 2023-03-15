@@ -214,7 +214,7 @@ a{
     width: 40%;
     height: 40px;
     margin-top:-20px;
-    margin-left:26.5%;
+    margin-left:30%;
     line-height:40px;
     text-align: center;
     font-size: 1.125rem;
@@ -353,18 +353,12 @@ a{
     justify-content: space-between;
   }
   .guanL{
-    width:90%;
+    width:100%;
     height:90%;
-    display:flex;
-    justify-content: space-between;
-    margin-left:5%;
     margin-top:18px;
+    overflow: hidden;
   }
-  .gL-1,.gL-2,.gL-3{
-    border: 1px solid rgba(255,255,255,0.1);
-     width:100px;
-     height:120px;
-  }
+
 
 .chakan{
   color:#00FCF9;
@@ -412,7 +406,7 @@ a{
   color: #36D8D8;
 }
 
-.cR .sh-title-text {
+.cL-top1 .sh-title-text, .cR .sh-title-text {
   margin-left: 18px;
 }
 
@@ -426,6 +420,43 @@ a{
   height: 200px;
 }
 
+/* 轮播插件修改样式 */
+.swiper-slide{
+  width: 25% !important;
+  height: 160px;
+  margin: 0px 4%;
+}
+
+.swiper-slide > img {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  top: 30%;
+}
+
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after, .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
+  font-size: 20px;
+  color: #3690EE;
+}
+/*  end  */
+
+.person-info {
+  color: #fff;
+  font-size: 0.875rem;
+}
+.person-info > span{
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+}
+.person-info > span:first-child{
+  color: #B9BFC8;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  margin-top: 14px;
+}
 
 
 
