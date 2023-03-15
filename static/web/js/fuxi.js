@@ -11,8 +11,7 @@ $(document).ready(function(){
             axisTick: false,
             axisLabel: {
                 show: true, //显示坐标轴上的文字
-                fontStyle:"PingFang SC-Regular, PingFang SC",
-                fontSize: 28,
+                fontSize: 12,
                 color: '#B9BFC8'
             },
             splitLine:{
@@ -42,8 +41,7 @@ $(document).ready(function(){
             offset:2,
             axisLabel: {
                 show: true, //显示坐标轴上的文字
-                fontStyle:"PingFang SC-Regular, PingFang SC",
-                fontSize: 24,
+                fontSize: 12,
                 color: '#B9BFC8'
             },
             splitLine:{
@@ -85,7 +83,7 @@ $(document).ready(function(){
             show:false,
             top:'25%',
             right:'5%',
-            bottom:'10%',
+            bottom:'13%',
             left:'20%'
         },
     };
