@@ -346,12 +346,9 @@ a{
   }
 
   .sj-hz{
-    margin-top:30px;
-    margin-left:35%;
-    border: 1px solid rgba(255,255,255,0.1);
-    width: 95%;
-    margin-left:2.5%;
-    height:70%;
+    margin:30px 25px 0px 25px;
+    width: 90%;
+    height: 60%;
     display: flex;
     justify-content: space-between;
   }
@@ -382,11 +379,51 @@ a{
   width:100%;
   height:50%;
 }
-.sh-1,.sh-2,.sh-3,.sh-4{
-  border:1px solid white;
-  width:20%;
+.sh-box{
+  /* width:25%; */
   height:90%;
+  display: flex;
+  justify-content: left;
+}
+.sh-box > div:first-child{
+  width: 100px;
+  height:100%;
+}
+.pie-text-tip {
+  margin-top: 45px;
+}
+.pie-text-tip span{
+  color: #B9BFC8;
+  font-size: 0.75rem;
+  display: block;
+  white-space: nowrap;
+}
+.pie-text-tip span:first-child{
+  color: #36D8D8;
+}
+.sh-title-text {
+  color: #B9BFC8;
+  font-size: 0.75rem;
+  margin-left: 30px;
+  margin-top: 18px;
+}
+.count-text {
+  font-style: normal;
+  color: #36D8D8;
+}
 
+.cR .sh-title-text {
+  margin-left: 18px;
+}
+
+.cr-pie-chart {
+  margin: 40px 18px 30px 18px;
+  height: 58%;
+}
+
+.cl-bar-box {
+  width: 90%;
+  height: 200px;
 }
 
 

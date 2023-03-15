@@ -79,7 +79,8 @@
       <div class="cL">
         <div class="cL-top1">
           <div class="box-top-bar">党龄分布 </div>
-          <div id="main" style="width: 500px;height:250px;"></div>
+          <div class="sh-title-text">截止2023年02月21日 党员总数为<i class="count-text">75</i>人</div>
+          <div class="cl-bar-box" id="main"></div>
         </div>
       </div>
 
@@ -124,20 +125,44 @@
     </div>
     <div class="c-zhongj2">
       <div class="box-top-bar"> 三会一课</div>
+      <div class="sh-title-text">截止2023年02月21日 已开展“三会一课”<i class="count-text">22</i>次</div>
       <div class="sj-hz">
-        <div class="sh-1" id="sh-bz1"> </div>
+        <div class="sh-box">
           <!-- 插入饼状图 -->
-        
-      
-        <div class="sh-2" id="sh-bz2">
-          <!-- 插入饼状图 -->
+          <div  id="sh-bz1"></div>
+          <div class="pie-text-tip">
+            <span>6次</span>
+            <span>支部党员会议</span>
           </div>
-        <div class="sh-3" id="sh-bz3">
-          <!-- 插入饼状图 -->
-          </div>
-        <div class="sh-4 " id="sh-bz4">
-          <!-- 插入饼状图 -->
         </div>
+      
+        <div class="sh-box">
+          <!-- 插入饼状图 -->
+          <div  id="sh-bz2"></div>
+          <div class="pie-text-tip">
+            <span>13次</span>
+            <span>支部委员会会议</span>
+          </div>
+        </div>
+
+        <div class="sh-box">
+          <!-- 插入饼状图 -->
+          <div  id="sh-bz3"></div>
+          <div class="pie-text-tip">
+            <span>0次</span>
+            <span>党小组会</span>
+          </div>
+        </div>
+
+        <div class="sh-box">
+          <!-- 插入饼状图 -->
+          <div  id="sh-bz4"></div>
+          <div class="pie-text-tip">
+            <span>3次</span>
+            <span>党课</span>
+          </div>
+        </div>
+
       </div>
     </div>
     </div>
@@ -188,6 +213,8 @@
 
   <div class="cR"> 
     <div class="box-top-bar">学历分布</div>
+    <div class="sh-title-text">截止2023年02月21日 党员总数<i class="count-text">75</i>人</div>
+    <div class="cr-pie-chart" id="educationChart"></div>
   </div>
 
 
@@ -196,254 +223,6 @@
 </body>
 
 </html>
-<script src="../static/public/js/chartMap.js"></script>
 <script src="../static/public/js/echarts.min.js"></script>
 <script src="../static/public/js/jquery.min.js"></script>
 <script src="../static/web/js/fuxi.js"></script>
-
-<!--  三会一课sh-bz1的饼图1-->
-<script type="text/javascript">
-          // 基于准备好的dom，初始化echarts实例
-       var myChart = echarts.init(document.getElementById('sh-bz1'));
-       var v1=80//结算数
-		  var v2=20//未结算数
-		  var v3=v1+v2//总订单数
-      option = {
-        
-	
-//animation: false,
-    series: [{	
-        type: 'pie',
-       radius: ['60%', '70%'],
-        color:'#49bcf7',
-        label: {
-            normal: {
-                position: 'center'
-            }
-        },
-        data: [{
-            value: v1,
-            name: '支部党员会议',
-            label: {
-                normal: {
-                    formatter:Math.round( v1/v3*100)+ '%',
-                    textStyle: {
-                        fontSize: 24,
-						color:'#fff',
-                    }
-                }
-            }
-        }, {
-            value: v2,
-            label: {
-                normal: {
-                 formatter : function (params){
-                return ''
-            },
-                    textStyle: {
-                        color: '#aaa',
-                        fontSize: 16
-                    }
-                }
-            },
-            itemStyle: {
-                normal: {
-                    color: '#00FF00'
-                },
-                emphasis: {
-                    color: '#FF0000'
-                }
-            },
-        }]
-    }]
-};
-        myChart.setOption(option);
-        window.addEventListener("resize",function(){
-            myChart.resize();
-        });
-  
-       </script>
-
-
-       <!--  三会一课sh-bz1的饼图2-->
-<script type="text/javascript">
-  // 基于准备好的dom，初始化echarts实例
-var myChart = echarts.init(document.getElementById('sh-bz2'));
-var v1=80//结算数
-		var v2=20//未结算数
-		var v3=v1+v2//总订单数
-      option = {
-	
-//animation: false,
-    series: [{	
-        type: 'pie',
-       radius: ['60%', '70%'],
-        color:'#49bcf7',
-        label: {
-            normal: {
-                position: 'center',
-                formatter:''
-            }
-        },
-        data: [{
-            value: v1,
-            name: '',
-            label: {
-                normal: {
-                    formatter:Math.round( v1/v3*100)+ '%',
-                    textStyle: {
-                        fontSize: 24,
-						color:'#fff',
-                    }
-                }
-            }
-        }, {
-            value: v2,
-            label: {
-                normal: {
-                 formatter : function (params){
-                return ''
-            },
-                    textStyle: {
-                        color: '#aaa',
-                        fontSize: 16
-                    }
-                }
-            },
-            itemStyle: {
-                normal: {
-                    color: '#F08080'
-                },
-                emphasis: {
-                    color: '#00FFFF'
-                }
-            },
-        }]
-    }]
-};
-        myChart.setOption(option);
-        window.addEventListener("resize",function(){
-            myChart.resize();
-        });
-  </script>
-
-  
-       <!--  三会一课sh-bz1的饼图3-->
-<script type="text/javascript">
-  // 基于准备好的dom，初始化echarts实例
-var myChart = echarts.init(document.getElementById('sh-bz3'));
-var v1=30//结算金额
-		var v2=70//未结算
-		var v3=v1+v2
-option = {	
-    series: [{
-		
-        type: 'pie',
-       radius: ['60%', '70%'],
-        color:'#62c98d',
-        label: {
-            normal: {
-                position: 'center'
-            }
-        },
-        data: [{
-            value: v1,
-            name: '金额结算率',
-            label: {
-                normal: {
-                    formatter:Math.round( v1/v3*100)+ '%',
-                    textStyle: {
-                        fontSize: 24,
-						color:'#fff',
-                    }
-                }
-            }
-        }, {
-            value: v2,
-            label: {
-                normal: {
-                 formatter : function (params){
-                return ''
-            },
-                    textStyle: {
-                        color: '#aaa',
-                        fontSize: 16
-                    }
-                }
-            },
-            itemStyle: {
-                normal: {
-                    color: '	#FFA07A'
-                },
-                emphasis: {
-                    color: '0000FF'
-                }
-            },
-        }]
-    }]
-};
-        myChart.setOption(option);
-        window.addEventListener("resize",function(){
-            myChart.resize();
-        });
-      </script>
-
-        <!--  三会一课sh-bz1的饼图4-->
-<script type="text/javascript">
-  // 基于准备好的dom，初始化echarts实例
-var myChart = echarts.init(document.getElementById('sh-bz4'));
-var v1=90//结算金额
-		var v2=10//未结算
-		var v3=v1+v2
-option = {	
-    series: [{
-		
-        type: 'pie',
-       radius: ['60%', '70%'],
-        color:'#29d08a',
-        label: {
-            normal: {
-                position: 'center'
-            }
-        },
-        data: [{
-            value: v1,
-            name: '金额结算率',
-            label: {
-                normal: {
-                    formatter:Math.round( v1/v3*100)+ '%',
-                    textStyle: {
-                        fontSize: 24,
-						color:'#fff',
-                    }
-                }
-            }
-        }, {
-            value: v2,
-            label: {
-                normal: {
-                 formatter : function (params){
-                return ''
-            },
-                    textStyle: {
-                        color: '#aaa',
-                        fontSize: 16
-                    }
-                }
-            },
-            itemStyle: {
-                normal: {
-                    color: '	#0000FF'
-                },
-                emphasis: {
-                    color: '#FFFF00'
-                }
-            },
-        }]
-    }]
-};
-        myChart.setOption(option);
-        window.addEventListener("resize",function(){
-            myChart.resize();
-        });
-</script>
