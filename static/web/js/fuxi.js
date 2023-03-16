@@ -221,7 +221,7 @@ $(document).ready(function(){
     var shOption5 = {
         legend: { // 图例设置
             orient: "vertical",
-            right: '25%',
+            right: '18%',
             top: 'middle',
             textStyle: {
                 color: '#fff',
@@ -268,9 +268,14 @@ $(document).ready(function(){
     myChartSh4.setOption(shOption4);
     myChartSh5.setOption(shOption5);
 
-    // window.addEventListener("resize",function(){
-    //     myChartSh1.resize();
-    // });
+    window.addEventListener("resize",function(){
+        myChart.resize();
+        myChartSh1.resize();
+        myChartSh2.resize();
+        myChartSh3.resize();
+        myChartSh4.resize();
+        myChartSh5.resize();
+    });
 
     var mySwiper = new Swiper ('.swiper', {
         // loop: true, // 循环模式选项
