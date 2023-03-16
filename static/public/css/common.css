@@ -3,11 +3,11 @@ html, body {
     /* font-family: PingFang SC-Bold, PingFang SC; */
 }
 
-@media (max-width: 1630px) {
+/* @media (max-width: 1630px) {
     html, body {
         font-size: 12px;
     }
-}
+} */
 
 .bg-blue {
     background: #081D3C;
