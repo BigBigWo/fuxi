@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+    let fullscreen = false;
+
     var menthod = {
         getFontSize: function (res) {
             const clientWidth = window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth;
@@ -7,8 +9,41 @@ $(document).ready(function(){
             let fontSize = clientWidth / 1920;
             console.log(res*fontSize)
             return res*fontSize;
+        },
+        handleFullScreen : function() {
+            let element = document.documentElement;
+            // 判断是否已经是全屏
+            // 如果是全屏，退出
+            if (fullscreen) {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                } else if (document.webkitCancelFullScreen) {
+                    document.webkitCancelFullScreen();
+                } else if (document.mozCancelFullScreen) {
+                    document.mozCancelFullScreen();
+                } else if (document.msExitFullscreen) {
+                    document.msExitFullscreen();
+                }
+                // console.log('已还原！');
+            } else {    // 否则，进入全屏
+                if (element.requestFullscreen) {
+                    element.requestFullscreen();
+                } else if (element.webkitRequestFullScreen) {
+                    element.webkitRequestFullScreen();
+                } else if (element.mozRequestFullScreen) {
+                    element.mozRequestFullScreen();
+                } else if (element.msRequestFullscreen) {
+                    // IE11
+                    element.msRequestFullscreen();
+                }
+                // console.log('已全屏！');
+            }
+            // 改变当前全屏状态
+            fullscreen = !fullscreen;
         }
     };
+
+    $("#fullBtn").on("click", menthod.handleFullScreen);
 
     // 基于准备好的dom，初始化echarts实例
     var myChart = echarts.init(document.getElementById('main'));
@@ -39,7 +74,7 @@ $(document).ready(function(){
             axisLine:{
                 show: true,
                 lineStyle: {
-                    color: "rgba(255, 251, 248, 1)"
+                    color: "#B9BFC8"
 
                 }
             }
@@ -291,18 +326,18 @@ $(document).ready(function(){
         // myChartSh5.setOption(shOption5,true);
     });
 
-    var mySwiper = new Swiper ('.swiper', {
-        // loop: true, // 循环模式选项
-        // 如果需要分页器
-        // pagination: {
-        //     el: '.swiper-pagination',
-        // },
+    // var mySwiper = new Swiper ('.swiper', {
+    //     // loop: true, // 循环模式选项
+    //     // 如果需要分页器
+    //     // pagination: {
+    //     //     el: '.swiper-pagination',
+    //     // },
         
-        // 如果需要前进后退按钮
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    })     
+    //     // 如果需要前进后退按钮
+    //     navigation: {
+    //         nextEl: '.swiper-button-next',
+    //         prevEl: '.swiper-button-prev',
+    //     },
+    // })     
 
 });
