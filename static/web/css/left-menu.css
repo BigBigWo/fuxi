@@ -1,0 +1,30 @@
+/* 左侧菜单栏样式 */
+.left-menu {
+    width: 14%;
+    color: #B9BFC8;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid #0A3E77;
+    border-left: none;
+    border-bottom: none;
+    font-size: 0.875rem;
+}
+
+.menu-back-btn {
+    line-height: 3.75rem;
+    color: #7AEEFB;
+    text-align: center;
+}
+.menu-back-btn > img {
+    width: 1.25rem;
+    vertical-align: middle;
+}
+
+.left-menu ul > li {
+    line-height: 3.75rem;
+    text-align: center;
+}
+
+.left-menu ul > li.active {
+    color: #7AEEFB;
+    background: rgba(255,255,255,0.05);
+}

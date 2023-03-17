@@ -1,0 +1,66 @@
+@import url(header.css);
+@import url(left-menu.css);
+
+.main-box{
+    height: calc(100% - 4.375rem - 1px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-list-box {
+    margin: 1.25rem 1.875rem 1.875rem 1.125rem;;
+    width: 100.625rem;
+    border: 1px solid #0A3E77;
+    background: rgba(255,255,255,0.05);
+    padding: 1.25rem 1.125rem;
+    overflow: auto;
+}
+
+.article-box {
+    height: 8.75rem;
+    display: flex;
+    justify-content: flex-start;
+    background: rgba(255,255,255,0.05);
+    color: #fff;
+    margin-bottom: 1.25rem;
+}
+
+.article-box > a {
+    line-height: 8.75rem;
+    color: #7AEEFB;
+    font-size: 0.875rem;
+    width: 8.875rem;
+    text-align: right;
+    padding-right: 3.125rem;
+}
+
+.article-img-box {
+    padding: 1rem 0.9375rem;;
+}
+
+.article-img-box > img {
+    width: 9rem;
+    height: 6.875rem;
+}
+
+.article-content-box {
+    color: #B9BFC8;
+    margin-top: 1.1625rem;
+    width: 75rem;
+    margin-right: 1.25rem;
+}
+
+.article-content-box > span {
+    display: block;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.article-content-box > span.article-title {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.8rem;
+}
