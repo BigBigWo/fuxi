@@ -4,6 +4,11 @@ html, body {
     /* font-family: PingFang SC-Bold, PingFang SC; */
 }
 
+* {
+    margin: 0px;
+    padding:0px;
+  }
+
 /* @media (max-width: 1630px) {
     html, body {
         font-size: 12px;

@@ -1,3 +1,6 @@
+/**
+ * 党建引领
+ */
 $(document).ready(function(){
 
     let fullscreen = false;
