@@ -141,6 +141,6 @@
     vertical-align: middle;
   }
 
-  .Lf a.active {
+  .Lf a.active, .rt  a.active {
     color: #3690EE;
   }
