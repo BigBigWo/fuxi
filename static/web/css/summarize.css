@@ -281,12 +281,17 @@
 }
 
 .swiper-button-next,
-.swiper-button-prev {
-  display: none;
+.swiper-button-prev,
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+  opacity: 0;;
 }
 .my-swiper-box:hover .swiper-button-next, 
 .my-swiper-box:hover .swiper-button-prev {
-  display: block;
+  opacity: 1;
+}
+
+.my-swiper-box:hover .swiper-button-next.swiper-button-disabled, .my-swiper-box:hover .swiper-button-prev.swiper-button-disabled {
+  opacity: .35;
 }
 
 .swiper-slide > img {
