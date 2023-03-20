@@ -245,6 +245,10 @@
     content: '\e60f';
 }
 
+.camera-active {
+    border: 1px solid #36D8D8;
+}
+
 /* 暂无设备信息 */
 .empty-tip-box {
     text-align: center;
