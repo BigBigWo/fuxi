@@ -1,0 +1,42 @@
+ /* 弹窗 */
+ .pop-box{
+    z-index: 99;
+    height:100%;
+    width:100%;  
+    top: 0px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:  rgba(8, 29, 60, 0.7);
+    color: #fff;
+}
+.pop-top{
+    width: 56.25rem;
+    border: 1px solid #36D8D8;
+    background-color:#081D3C ;
+    z-index: 2;
+    min-height: 20rem;
+}
+.pop-bar{
+    width: 12.5rem;
+    height:2.5rem;
+    margin-top: -1.25rem;
+    margin-left: 21.875rem;
+    background:url(../../public/images/bg_btk1.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    color: #fff;
+    line-height: 2.5rem;
+}
+.pop-content-box {
+    margin: 1.125rem 1.875rem;
+}
+.pop-bottom {
+    margin-top: 1.25rem;
+}
+.pop-close-btn {
+    color: #36D8D8;
+    font-size: 2.25rem;
+}
