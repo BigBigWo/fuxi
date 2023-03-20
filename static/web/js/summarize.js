@@ -114,8 +114,8 @@ $(document).ready(function(){
     });
 
     var mySwiper = new Swiper('#swiper-container1',{
-        slidesPerView:3,
-         spaceBetween : 20,
+        slidesPerView: 1,
+        //  spaceBetween : 20,
         // loop: true,
         navigation: {
           nextEl: '.swiper-button-next',
