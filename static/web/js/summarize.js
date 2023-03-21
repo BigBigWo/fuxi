@@ -113,7 +113,7 @@ $(document).ready(function(){
         myChartSh5.resize();
     });
 
-    var mySwiper = new Swiper('#swiper-container1',{
+    var mySwiper = new Swiper('#swiper-container1 .swiper',{
         slidesPerView: 1,
         //  spaceBetween : 20,
         // loop: true,
