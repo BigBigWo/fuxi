@@ -144,3 +144,16 @@
   .Lf a.active, .rt  a.active {
     color: #3690EE;
   }
+
+  /* 码头镇头部 */
+  .matou-top {
+    margin-left: 1.875rem;
+  }
+
+  .matou-top .top-dj-img{
+    width: 1.25rem;
+    height: 1.25rem;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+  }
+  
