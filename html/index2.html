@@ -96,7 +96,7 @@
                 </div>
                 <div class="c-zhongj2">
                     <div class="box-top-bar"> “X”随手拍</div>
-                    <div class="mySwiper">
+                    <div class="mySwiper" id="myClapSwiper">
                         <div class="swiper clap-content-box">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -207,18 +207,171 @@
         </div>
     </div>
 
-    <!-- 弹窗 -->
-    <div class="pop-box">
+    <!-- 邻里中心组织管理弹窗 -->
+    <div class="pop-box hide">
         <div class="pop-top">
             <div class="pop-bar">组织管理</div>
             <div class="pop-content-box">
                 <div class="person-list-box">
-                    <div></div>
+                    <div class="person-box">
+                        <div class="person-photo">
+                            <img src="../static/public/images/test_photo.png">
+                        </div>
+                        <div class="person-info-box">
+                            <span>
+                                <label>姓　　名：</label>陈承志
+                            </span>
+                            <span>
+                                <label>姓　　名：</label>支委
+                            </span>
+                            <span>
+                                <label>政治面貌：</label>党员
+                            </span>
+                            <span>
+                                <label>出生日期：</label>1988-03-02
+                            </span>
+                            <span>
+                                <label>联系电话：</label>13805906880
+                            </span>
+                        </div>
+                    </div>
+                    <div class="person-box">
+                        <div class="person-photo">
+                            <img src="../static/public/images/test_photo.png">
+                        </div>
+                        <div class="person-info-box">
+                            <span>
+                                <label>姓　　名：</label>李维维
+                            </span>
+                            <span>
+                                <label>姓　　名：</label>福溪社区党支部副书记
+                            </span>
+                            <span>
+                                <label>政治面貌：</label>党员
+                            </span>
+                            <span>
+                                <label>出生日期：</label>1988-03-02
+                            </span>
+                            <span>
+                                <label>联系电话：</label>13805906880
+                            </span>
+                        </div>
+                    </div>
+                    <div class="person-box">
+                        <div class="person-photo">
+                            <img src="../static/public/images/test_photo.png">
+                        </div>
+                        <div class="person-info-box">
+                            <span>
+                                <label>姓　　名：</label>陈少斌
+                            </span>
+                            <span>
+                                <label>姓　　名：</label>党支部书记
+                            </span>
+                            <span>
+                                <label>政治面貌：</label>党员
+                            </span>
+                            <span>
+                                <label>出生日期：</label>1988-03-02
+                            </span>
+                            <span>
+                                <label>联系电话：</label>13805906880
+                            </span>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
         <div class="pop-bottom">
         <a class="iconfont pop-close-btn" href="javascript:void(0);"></a>
+        </div>
+    </div>
+
+    <!-- 病有所医弹窗 -->
+    <div class="pop-box doctor-pop hide">
+        <div class="pop-top">
+            <div class="pop-bar">病有所医</div>
+            <div class="pop-content-box">
+                <div><img src="../static/public/images/test.jpg"></div>
+                <div class="cinic-info-box">
+                    <span>福溪第一卫生室</span>
+                    <span>地址</span>
+                    <span class="cinic-address">南安市美林街道41号</span>
+                    <span>电话</span>
+                    <span class="cinic-tel">-</span>
+                </div>
+            </div>
+        </div>
+        <div class="pop-bottom">
+        <a class="pop-close-btn" href="javascript:void(0);"></a>
+        </div>
+    </div>
+
+    <!-- 荣誉榜弹窗 -->
+    <div class="pop-box hide">
+        <div class="pop-top">
+            <div class="pop-bar">荣誉榜</div>
+            <div class="pop-content-box">
+                <div class="honour-list-box">
+                    <img src="../static/public/images/bg_rongy.png">
+                    <img src="../static/public/images/bg_rongy.png">
+                    <img src="../static/public/images/bg_rongy.png">
+                    <img src="../static/public/images/bg_rongy.png">
+                    <img src="../static/public/images/bg_rongy.png">
+                    <img src="../static/public/images/bg_rongy.png">
+                </div>
+            </div>
+        </div>
+        <div class="pop-bottom">
+        <a class="pop-close-btn" href="javascript:void(0);"></a>
+        </div>
+    </div>
+
+    <!-- 随手拍弹窗 -->
+    <div class="pop-box pop-clap-box">
+        <div class="pop-top">
+            <div class="pop-bar">"x"随手拍</div>
+            <div class="pop-content-box">
+              <!-- 滑动盒子 -->
+              <div class="pop-swiper" id="popClapSwiper">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+  
+                      <div class="swiper-slide">
+                          <img src="../static/public/images/test.jpg">
+                      </div>
+                      <div class="swiper-slide">
+                          <img src="../static/public/images/test.jpg">
+                      </div>
+                      <div class="swiper-slide">
+                          <img src="../static/public/images/test.jpg">
+                      </div>
+                      <div class="swiper-slide ">
+                          <img src="../static/public/images/test.jpg">
+                      </div>
+                      <div class="swiper-slide">
+                          <img src="../static/public/images/test.jpg">
+                      </div>
+                    </div>  
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+  
+                </div>
+                <div class="pop-meeting-title">这里是会议名称</div>
+                <div class="pop-publish">
+                    <span>发布人<br/><label>陈小小</label></span>
+                    <span>电话<br/><label>15233612345</label></span>
+                    <span>发布时间<br/><label>2023-03-02 09:03</label></span>
+                </div>
+                <div class="pop-publish-text">为了进一步密切联系群众，福溪社区书记陈少斌带领社区两委及党员开展了以“走访慰问贫困户，扶贫帮困
+                    暖人心”为主题的慰问送温暖活动。</div>
+            </div>
+          
+        </div>
+        <div class="pop-bottom">
+          <a class="pop-close-btn" href="javascript:void(0);"></a>
         </div>
     </div>
 </body>
@@ -229,3 +382,4 @@
 <script src="../static/public/js/swiper-bundle.min.js"></script>
 <script src="../static/public/js/common.js"></script>
 <script src="../static/web/js/index2.js"></script>
+<script src="../static/web/js/pop-box.js"></script>

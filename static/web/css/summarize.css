@@ -268,22 +268,26 @@
   display: grid;
 }
 
-.swiper {
+.mySwiper .swiper {
   overflow: hidden;
 }
 
-.swiper-slide{
+.mySwiper .swiper-slide{
   height: 10rem;
   text-align: center;
 }
 
-.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after, .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
+.mySwiper .swiper-button-prev:after, 
+.mySwiper .swiper-container-rtl .swiper-button-next:after,
+.mySwiper .swiper-button-next:after,
+.mySwiper .swiper-container-rtl .swiper-button-prev:after {
   font-size: 1.25rem;
 }
 
-.swiper-button-next,
-.swiper-button-prev,
-.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev,
+.mySwiper .swiper-button-next.swiper-button-disabled,
+.mySwiper .swiper-button-prev.swiper-button-disabled {
   opacity: 0;;
 }
 .my-swiper-box:hover .swiper-button-next, 
@@ -295,7 +299,7 @@
   opacity: .35;
 }
 
-.swiper-slide > img {
+.mySwiper .swiper-slide > img {
   width: 14.625rem;
   height: 10.25rem;
   /* width: 100%;

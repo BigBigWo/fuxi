@@ -149,7 +149,7 @@ $(document).ready(function(){
 
 
     // 随手拍
-    var mySwiper = new Swiper ('.swiper', {
+    var mySwiper = new Swiper ('#myClapSwiper .swiper', {
         slidesPerView : 2,
         // spaceBetween : 24,
 
@@ -161,8 +161,8 @@ $(document).ready(function(){
         
         // 如果需要前进后退按钮
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '#myClapSwiper .swiper-button-next',
+            prevEl: '#myClapSwiper .swiper-button-prev',
         },
     })    
 });

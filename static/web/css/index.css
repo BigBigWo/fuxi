@@ -444,36 +444,19 @@ a{
 }
 
 /* 轮播插件修改样式 */
-.swiper-slide{
+.guanL .swiper-slide{
   width: 6.25rem !important;
   height: 8.25rem;
   /* margin-right: 3.5625rem; */
   margin: 0 1.78125rem;
 }
 
-.swiper-slide > img {
+.guanL  .swiper-slide > img {
   width: 100%;
   height: 100%;
 }
 
-.swiper-button-next, .swiper-button-prev {
-  top: 30%;
-}
-
-.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after, .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
-  font-size: 20px;
-  color: #3690EE;
-}
-
-.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
-  right: 0.625rem;
-}
-
-.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
-  left: 0.625rem;
-}
-
-.swiper-wrapper {
+.guanL .swiper-wrapper {
   width: calc(100%-2.25rem);
 }
 /*  end  */

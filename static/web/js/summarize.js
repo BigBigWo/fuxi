@@ -118,8 +118,8 @@ $(document).ready(function(){
         //  spaceBetween : 20,
         // loop: true,
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '#swiper-container1 .swiper-button-next',
+          prevEl: '#swiper-container1 .swiper-button-prev',
         },
     });
 
