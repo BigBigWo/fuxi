@@ -160,7 +160,7 @@
     }
   
     .cL-top3 > div:nth-child(2) {
-      margin-top: 1.125rem;
+      margin-top: 2.125rem;
     }
   
     .dztg{
@@ -290,49 +290,13 @@
   
   .cr-pie-chart {
     margin: 2.5rem 1.125rem 1.875rem 1.125rem;
-    height: 10rem;
+    height: 13rem;
   }
   
   .cl-bar-box {
     /* width: calc(100%-2.25rem); */
     height: 12.5rem;
     padding: 0 1.125rem;
-  }
-  
-  /* 轮播插件修改样式 */
-  .guanL .swiper-slide{
-    width: 6.25rem !important;
-    height: 8.25rem;
-    /* margin-right: 3.5625rem; */
-    margin: 0 1.78125rem;
-  }
-  
-  .guanL  .swiper-slide > img {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .guanL .swiper-wrapper {
-    width: calc(100%-2.25rem);
-  }
-  /*  end  */
-  
-  .person-info {
-    color: #fff;
-    font-size: 0.875rem;
-  }
-  .person-info > span{
-    display: block;
-    text-align: center;
-    margin-top: 15px;
-  }
-  .person-info > span:first-child{
-    color: #B9BFC8;
-    font-size: 0.75rem;
-    /* white-space: nowrap; */
-    margin-top: 14px;
-    /* overflow: hidden; */
-    /* text-overflow: ellipsis; */
   }
   
   .Lf a.active {
@@ -346,4 +310,86 @@
     margin-bottom: 1.2rem
   }
   
+  /* 信息综述下的盒子 */
+.xingxi-max{
+  width:100%;
+  height: calc(100% - 2.375rem);
+  margin-top: 1.125rem;
+  display: flex;
+  justify-content: flex-start;
+}
+.xingxi-left{
+  width: 15rem;
+  height: 10rem;
+  margin: 0 1.25rem;
+}
+.xingxi-left img{
+width: 100%;
+height: 100%;
+
+}
+.xingxi-right{
+  width: calc(100% - 17.5rem - 1.4375rem);
+  height: calc(100% - 1.225rem);
+  margin-right: 1.4375rem;
+  font-size: 0.875rem;
+  color: #FFFFFF;
+  line-height: 1.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+
+/* end */
+
+.vedio-box {
+  margin: 1.125rem;
+  height: 14.5rem;
+}
+
+.weather-info-box {
+  background: rgba(255,255,255,0.05);
+  display: flex;
+  justify-content: space-between;
+  padding: 1.125rem 1.25rem;
+  margin: 1.125rem 1.25rem;
+  color: #fff;
+  font-size: 0.875rem;
+}
   
+.weather-temp {
+  font-size: 2.25rem;
+}
+
+.weather-detail-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.125rem 2.325rem;;
+  color: #fff;
+  font-size: 0.875rem;
+  line-height: 1.625rem;
+  text-align: center;
+}
+
+.weather-detail-box label{
+  font-size: 0.75rem;
+  color: #B9BFC8;
+}
+
+.weather-detail-box i{
+  font-size: 1.25rem;
+}
+
+.weather-oper-btn{
+  text-align: center;
+  background: rgba(255,255,255,0.05);
+  height: 2.0625rem;
+  margin: 0 9.1875rem;
+  line-height: 2.0625rem;
+}
+.weather-oper-btn a{
+  color: #fff;
+  font-size: 0.75rem
+}

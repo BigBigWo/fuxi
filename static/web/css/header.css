@@ -14,7 +14,7 @@
   }
   .Left {
     height:100%;
-    width:30%;
+    width:32%;
     line-height: 4.375rem;
     white-space: nowrap;
     color: #fff;
@@ -71,13 +71,13 @@
   .Content {
     background-size: 100% 80%;
     height: 50px;
-    width: 40%;
+    width: 36%;
     display:flex;
     justify-content:center;
   }
   .right{
     height:100%;
-    width:30%;
+    width:32%;
     line-height: 4.375rem;
     color: #fff;
     display: flex;
