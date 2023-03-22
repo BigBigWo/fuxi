@@ -1,0 +1,272 @@
+@import url(header.css);
+
+.all {
+    margin: 0px;
+    padding: 0px;
+    width:100%;
+    height:auto;
+    background: #081D3C;
+}
+
+  /* 中部区域 */
+.zhonbu {
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+}
+
+.cantaner-Left {
+    height:auto;
+    width:16%;
+    margin-top: 1.25rem;
+    padding: 0px 1.25rem 0px 1.875rem;
+}
+.cantaner-center{
+    width:58%;
+    height:auto;
+    margin-top: 1.25rem;
+}
+.contain-right{
+    margin-top: 1.25rem;
+    height:auto;
+    width:26%;
+    padding: 0px 1.875rem 0px 1.25rem;
+}
+
+.cL {
+    width:100%;
+    border: 1px solid #0A3E77;
+    background: rgba(255,255,255,0.05);
+    margin-bottom: 1.25rem;
+    height: 58.875rem;
+    margin-top: 1.25rem;
+}
+.cR{
+    width:100%;
+    border: 1px solid #0A3E77;
+    background: rgba(255,255,255,0.05);
+    height: calc(17.9375rem - 1px);
+    margin-top: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+.contain-right .cR:first-child {
+    height: calc(38.4875rem - 1px);
+}
+.contain-right .cR:last-child {
+    margin-bottom: 1.25rem;
+}
+
+.c-zhongj{
+    width:100%;
+    height: 58.875rem;
+    margin-top: 1.25rem;
+    border: 1px solid #0A3E77;
+    background: rgba(255,255,255,0.05);
+}
+
+.box-top-bar{
+    color:white;
+    background:url(../../public/images/bg_btk1.svg) no-repeat;
+    background-size: 100% 100%;
+    width: 40%;
+    margin-top:-1.25rem;
+    margin-left:30%;
+    line-height: 2.5rem;
+    text-align: center;
+    font-size: 1.125rem;
+}
+.box-top-bar-center{
+    color:white;
+    background:url(../../public/images/bg_btk2.svg) no-repeat;
+    background-size: 100% 100%;
+    width: 40%;
+    margin-top: -1.25rem;
+    margin-left:26.5%;
+    line-height: 2.5rem;
+    text-align: center;
+    font-size: 1.125rem;
+}
+
+.cL-top1 .box-top-bar {
+    width: 64%;
+    margin-left: 18%;
+}
+
+.cr-img-box {
+    margin: 1.125rem 1.125rem 1.25rem 1.125rem;
+    height: 14.3125rem;
+}
+.cr-img-box > img{
+    width: 100%;
+    height: 100%;
+}
+
+.refresh-btn {
+    color: #fff; 
+    text-align: center;
+    font-size: 0.75rem;
+    width: 6.5rem;
+    height: 2.0625rem;
+    line-height: 2.0625rem;
+    margin-left: 4.25rem;
+    background: rgba(255,255,255,0.05);
+    margin-top: 1.125rem;
+}
+
+.refresh-btn::before {
+    font-family: 'iconfont';
+    content: '\e60d';
+}
+
+/* 摄像头列表盒子 */
+.camera-list-box {
+    margin-top: 1.875rem;
+    font-size: 0.875rem;
+    color: #B9BFC8;
+    height: 52.5625rem;
+    overflow: auto;
+}
+
+.camera-list-box ul {
+    list-style: none;
+}
+
+.first-ul p {
+    height: 3rem;
+    padding: 0 1.125rem;
+    line-height: 3rem;
+}
+
+.second-ul {
+    display: none;
+}
+
+.second-ul > li {
+    height: 3rem;
+    padding-left: 2.25rem;
+    line-height: 3rem;
+}
+
+.first-ul li > p::before {
+    font-family: 'iconfont';
+    content: '\e604';
+    margin-right: 0.125rem;
+}
+.first-ul li.active > p::before {
+    font-family: 'iconfont';
+    content: '\e603';
+}
+.second-ul > li::before{
+    font-family: 'iconfont';
+    content: '\e60c';
+    margin-right: 0.3125rem;
+}
+
+.first-ul li.active > p {
+    background: rgba(255,255,255,0.05);
+    color: #36D8D8;
+}
+.first-ul li.active > ul {
+    display: block;
+}
+.second-ul li.active {
+    background: rgba(255,255,255,0.05);
+    color: #36D8D8;
+}
+
+/* 摄像头展示 */
+.camera-content-box {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.125rem;
+    color: #B9BFC8;
+    font-size: 0.875rem;
+}
+
+.camera-left-box {
+    width: 44.4375rem;
+    height: 36.125rem;
+}
+
+.camera-box {
+    background: rgba(255,255,255,0.05)
+}
+
+.camera-right-box {
+    width: 21.75rem;
+    margin-left: 0.9375rem;
+}
+
+.camera-main-box {
+    width: 44.4375rem;
+    height: 36.125rem;
+    margin-bottom: 0.9375rem;
+}
+
+.camera-bottom-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.camera-bottom-box > div {
+    width: 21.75rem;
+    height: 17.5625rem;
+}
+
+.camera-right-box > div {
+    height: 17.5625rem;
+}
+.camera-right-box > div:nth-child(2) {
+    height: 17.625rem;
+}
+.camera-right-box > div:not(:last-child) {
+    margin-bottom: 0.9375rem;
+}
+
+.camera-name {
+    padding: 1.25rem 0.9375rem;
+}
+
+.camera-big-show-box {
+    margin: 0 0.9735rem 0.9735rem 0.9735rem;
+    height: 31.4375rem;
+    background-color: #070C1A;
+}
+.camera-min-show-box {
+    margin: 0 0.9735rem 0.9735rem 0.9735rem;
+    height: 12.875rem;
+    background-color: #070C1A;
+}
+
+.close-camera-btn{
+    float: right;
+    color: #B9BFC8;
+    font-size: 1.25rem;
+}
+.close-camera-btn::after{
+    font-family: 'iconfont';
+    content: '\e60f';
+}
+
+.camera-active {
+    border: 1px solid #36D8D8;
+}
+
+/* 暂无设备信息 */
+.empty-tip-box {
+    text-align: center;
+}
+.empty-tip-box > span {
+    display: block;
+}
+.empty-tip-box > img {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: 5.1875rem;
+}
+
+.camera-big-show-box .empty-tip-box > img {
+    width: 3.75rem;
+    height: 3.75rem;
+    margin-top: 13.875rem;
+} 
