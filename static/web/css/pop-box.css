@@ -159,13 +159,33 @@ span.cinic-address, span.cinic-tel {
 
 
 /* 荣誉榜弹窗 */
+.honour-list-box > div{
+    position: relative;
+    width: 14.625rem;
+    display: inline-block;
+    width: 14.625rem;
+    height: 10.25rem;
+    margin-right: 3.75rem;
+    margin-bottom: 1.875rem;
+}
+.pop-honour-box > span{
+    position: absolute;
+    left: 2.6rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #FF2F20;
+    top: 3.5rem;
+    width: 9.625rem;
+}
+
 .honour-list-box img{
     width: 14.625rem;
     height: 10.25rem;
-    margin-right: 3.9rem;
-    margin-bottom: 1.875rem;
+    /* margin-right: 3.75rem;
+    margin-bottom: 1.875rem; */
 }
-.honour-list-box img:nth-child(3n){
+
+.honour-list-box div:nth-child(3n){
     margin-right: 0;
 }
 
