@@ -439,18 +439,24 @@ height: 100%;
   opacity: .35;
 }
 
-.mySwiper .swiper-slide img {
+.mySwiper .swiper-slide > div {
   width: 14.625rem;
   height: 10.25rem;
+  display: inline-block;
+  background-image: url(../../public/images/bg_rongy.png);
+  background-size: 100% 100%;
 }
 
 .mySwiper .swiper-slide span {
   display: block;
-  width: 9.625rem;
-  height: 5.25rem;
-  position: absolute;
-  top: 3.5rem;
-  left: 9rem;
+  padding: 0 2.5rem;
   font-size: 1rem;
   color: #FF2F20;
+}
+
+.honour-text-info {
+  height: 10.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

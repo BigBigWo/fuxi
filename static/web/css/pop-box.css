@@ -159,34 +159,37 @@ span.cinic-address, span.cinic-tel {
 
 
 /* 荣誉榜弹窗 */
+.honour-list-box {
+    display: flex;
+    flex-wrap: wrap;
+}
 .honour-list-box > div{
     position: relative;
-    width: 14.625rem;
     display: inline-block;
     width: 14.625rem;
     height: 10.25rem;
     margin-right: 3.75rem;
     margin-bottom: 1.875rem;
+    background-image: url(../../public/images/bg_rongy.png);
+    background-size: 100% 100%;
 }
-.pop-honour-box > span{
-    position: absolute;
-    left: 2.6rem;
+.pop-honour-box span{
+    display: block;
+    padding: 0 2.5rem;
     text-align: center;
     font-size: 1rem;
     color: #FF2F20;
-    top: 3.5rem;
-    width: 9.625rem;
-}
-
-.honour-list-box img{
-    width: 14.625rem;
-    height: 10.25rem;
-    /* margin-right: 3.75rem;
-    margin-bottom: 1.875rem; */
 }
 
 .honour-list-box div:nth-child(3n){
     margin-right: 0;
+}
+
+.pop-honour-text-info {
+    height: 10.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* 爱心工作站弹窗*/
